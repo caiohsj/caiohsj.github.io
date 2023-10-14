@@ -318,3 +318,74 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .line-primary {
+    &.medium {
+      width: 150px;
+    }
+  }
+
+  body {
+    header {
+      padding: 0;
+
+      .title {
+        display: none;
+      }
+
+      nav {
+        padding-top: 8px;
+
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+    }
+
+    main {
+      .works {
+        .projects {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .introduction {
+        .main {
+          flex-direction: column;
+
+          .dev-description {
+            padding: 0 8px;
+          }
+        }
+      }
+
+      .about-me {
+        .main {
+          flex-direction: column;
+          padding: 0 8px;
+        }
+      }
+
+      .contact-me {
+        .main {
+          flex-direction: column;
+          gap: 20px;
+
+          .contacts {
+            .contact {
+              a {
+                position: relative;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
