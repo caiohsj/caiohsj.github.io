@@ -216,6 +216,7 @@ body main .works .projects {
   grid-template-columns: repeat(2, 1fr);
   gap: 22px;
   padding: 0 12px;
+  justify-items: center;
 }
 body main .works .projects article {
   display: flex;
