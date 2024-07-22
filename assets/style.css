@@ -1,1 +1,335 @@
-*{margin:0;padding:0;box-sizing:border-box}@keyframes light-to-primary{from{color:#fff;border-color:#fff}to{color:#c778dd;border-color:#c778dd}}a[href]{text-decoration:none;color:inherit}.text-primary{color:#c778dd;animation:light-to-primary 1s ease-in}.text-light{color:#fff}.btn{padding:10px 20px;font-weight:bold;cursor:pointer}.btn.outlined-primary{border:2px solid #c778dd;color:#fff;background-color:#282c33;animation:light-to-primary 1s ease-in}.line-primary{display:flex;height:4px;background-color:#c778dd}.line-primary.small{width:100px}.line-primary.medium{width:300px}body{width:100%;height:100vh;background-color:#282c33;color:#abb2bf;font-family:"Lucida Sans","Lucida Sans Regular","Lucida Grande","Lucida Sans Unicode",Geneva,Verdana,sans-serif;overflow:unset}body .navbar{display:flex;width:100%;padding:12px 16px;margin-bottom:60px;background-color:#282c33;z-index:2;position:fixed;top:0}body .navbar nav{width:100%;display:flex;justify-content:space-between}body .navbar nav .title{font-size:24px;font-weight:bold;color:#fff;display:flex;align-items:center}body .navbar nav .title svg{margin-right:10px}body .navbar nav ul{display:flex;gap:20px;list-style-type:none}body .navbar nav ul li a{color:#abb2bf}body main{height:100%;display:flex;flex-direction:column;gap:180px;margin-top:180px;scroll-behavior:smooth;overflow:scroll}body main .introduction{height:100%;display:flex;gap:90px;flex-direction:column;position:relative;justify-content:space-around}body main .introduction .main{display:flex;justify-content:space-around;height:fit-content}body main .introduction .main .dev-description{display:flex;flex-direction:column;gap:16px}body main .introduction .main .dev-description h1{font-size:34px}body main .introduction .main .dev-image{position:relative}body main .introduction .main .dev-image .logo-secondary{position:absolute;top:76px}body main .introduction .main .dev-image .user-img{position:relative;z-index:2}body main .introduction .main .dev-image .img-description{position:absolute;display:flex;border:2px solid #abb2bf;width:457px;padding:8px;bottom:-36px}body main .introduction .main .dev-image .img-description .square-primary{width:20px;height:20px;background-color:#c778dd;margin-right:8px}body main .introduction .motivating-phrase{color:#fff;display:flex;flex-direction:column;width:fit-content;margin:auto}body main .introduction .motivating-phrase .phrase,body main .introduction .motivating-phrase .source{border:2px solid #abb2bf;padding:20px 24px;position:relative}body main .introduction .motivating-phrase .phrase .double-quote,body main .introduction .motivating-phrase .source .double-quote{color:#fff;font-weight:bold;font-size:40px;position:absolute;top:-16px;background-color:#282c33;display:flex;justify-content:center;width:30px;height:30px}body main .introduction .motivating-phrase .source{width:fit-content;align-self:flex-end;margin-top:-2px}body main .introduction .motivating-phrase .source .double-quote{right:16px}body main .works,body main .about-me,body main .contact-me{height:100%}body main .works header h2,body main .about-me header h2,body main .contact-me header h2{display:flex;align-items:center;color:#fff}body main .works header h2 .line-primary,body main .about-me header h2 .line-primary,body main .contact-me header h2 .line-primary{margin-left:20px}body main .works .projects{display:grid;grid-template-columns:repeat(4, 1fr);gap:22px;padding:0 12px}body main .works .projects article{border:2px solid #abb2bf;display:flex;flex-direction:column}body main .works .projects article h3{color:#fff}body main .works .projects article img{border:2px solid #abb2bf;width:100%;height:300px}body main .works .projects article .technologies{padding:12px;border:2px solid #abb2bf}body main .works .projects article .other-infos{height:140px;display:flex;flex-direction:column;justify-content:space-around;padding:0 12px}body main .about-me .main{display:flex;justify-content:space-around}body main .about-me .main .description{display:grid;grid-template-columns:1fr;gap:20px;max-width:600px}body main .contact-me .main{padding:0 16px;display:flex;justify-content:space-between}body main .contact-me .main .description{max-width:600px}body main .contact-me .main .contacts{border:2px solid #abb2bf;padding:16px}body main .contact-me .main .contacts h4{color:#fff;margin-bottom:18px}body main .contact-me .main .contacts .contact{display:flex;align-items:center;gap:8px}body footer{display:flex;flex-direction:column;align-items:center;border-top:2px solid #abb2bf;gap:22px;padding:32px 0}body footer h4{color:#fff}@media screen and (max-width: 576px){.line-primary.medium{width:150px}body header{padding:0}body header .title{display:none}body header nav{padding-top:8px}body header nav ul{width:100%;display:flex;justify-content:space-around}body main .works .projects{grid-template-columns:1fr}body main .introduction .main{flex-direction:column}body main .introduction .main .dev-description{padding:0 8px}body main .about-me .main{flex-direction:column;padding:0 8px}body main .contact-me .main{flex-direction:column;gap:20px}body main .contact-me .main .contacts .contact a{position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes light-to-primary {
+  from {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+  }
+  to {
+    color: #C778DD;
+    border-color: #C778DD;
+  }
+}
+a[href] {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-primary {
+  color: #C778DD;
+  animation: light-to-primary 2s ease-in;
+}
+
+.text-light {
+  color: #FFFFFF;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn.outlined-primary {
+  border: 2px solid #C778DD;
+  color: #FFFFFF;
+  background-color: #282C33;
+}
+
+.line-primary {
+  display: flex;
+  height: 4px;
+  background-color: #C778DD;
+}
+.line-primary.small {
+  width: 100px;
+}
+.line-primary.medium {
+  width: 300px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C778DD;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #282C33;
+  color: #ABB2BF;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+body .navbar {
+  display: flex;
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #282C33;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+}
+body .navbar nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body .navbar nav .title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+body .navbar nav .title svg {
+  margin-right: 10px;
+}
+body .navbar nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+body .navbar nav ul li a {
+  color: #ABB2BF;
+}
+body main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+  margin-top: 180px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+body main .introduction {
+  height: 100%;
+  display: flex;
+  padding-top: 130px;
+  gap: 90px;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+}
+body main .introduction .main {
+  display: flex;
+  justify-content: space-around;
+  height: fit-content;
+}
+body main .introduction .main .dev-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+body main .introduction .main .dev-description h1 {
+  font-size: 34px;
+}
+body main .introduction .main .dev-image {
+  position: relative;
+}
+body main .introduction .main .dev-image .logo-secondary {
+  position: absolute;
+  top: 76px;
+}
+body main .introduction .main .dev-image .user-img {
+  position: relative;
+  z-index: 2;
+}
+body main .introduction .main .dev-image .img-description {
+  position: absolute;
+  display: flex;
+  border: 2px solid #ABB2BF;
+  width: 457px;
+  padding: 8px;
+  bottom: -36px;
+}
+body main .introduction .main .dev-image .img-description .square-primary {
+  width: 20px;
+  height: 20px;
+  background-color: #C778DD;
+  margin-right: 8px;
+}
+body main .introduction .motivating-phrase {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: auto;
+}
+body main .introduction .motivating-phrase .phrase, body main .introduction .motivating-phrase .source {
+  border: 2px solid #ABB2BF;
+  padding: 20px 24px;
+  position: relative;
+}
+body main .introduction .motivating-phrase .phrase .double-quote, body main .introduction .motivating-phrase .source .double-quote {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  top: -16px;
+  background-color: #282C33;
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+body main .introduction .motivating-phrase .source {
+  width: fit-content;
+  align-self: flex-end;
+  margin-top: -2px;
+}
+body main .introduction .motivating-phrase .source .double-quote {
+  right: 16px;
+}
+body main .works, body main .about-me, body main .contact-me {
+  height: 100%;
+}
+body main .works header h2, body main .about-me header h2, body main .contact-me header h2 {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+body main .works header h2 .line-primary, body main .about-me header h2 .line-primary, body main .contact-me header h2 .line-primary {
+  margin-left: 20px;
+}
+body main .works {
+  margin-bottom: 120px;
+}
+body main .works .projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  padding: 0 12px;
+}
+body main .works .projects article {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+}
+body main .works .projects article h3 {
+  color: #FFFFFF;
+}
+body main .works .projects article img {
+  width: 100%;
+  height: 300px;
+}
+body main .works .projects article .technologies {
+  padding: 12px;
+}
+body main .works .projects article .other-infos {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 12px;
+}
+body main .about-me .main {
+  display: flex;
+  justify-content: space-around;
+}
+body main .about-me .main .description {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 600px;
+}
+body main .contact-me .main {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+body main .contact-me .main .description {
+  max-width: 600px;
+}
+body main .contact-me .main .contacts {
+  border: 2px solid #ABB2BF;
+  padding: 16px;
+}
+body main .contact-me .main .contacts h4 {
+  color: #FFFFFF;
+  margin-bottom: 26px;
+}
+body main .contact-me .main .contacts .contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2px solid #ABB2BF;
+  gap: 22px;
+  padding: 32px 0;
+}
+body footer h4 {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 576px) {
+  .line-primary.medium {
+    width: 150px;
+  }
+  body main {
+    margin-top: 0;
+  }
+  body main .navbar {
+    display: none;
+  }
+  body main .works {
+    height: fit-content;
+    margin-bottom: 0;
+  }
+  body main .works .projects {
+    grid-template-columns: 1fr;
+  }
+  body main .introduction {
+    padding-top: 60px;
+  }
+  body main .introduction .main {
+    flex-direction: column;
+  }
+  body main .introduction .main .dev-image .img-description, body main .introduction .main .dev-image .user-img {
+    width: 100%;
+  }
+  body main .introduction .main .dev-description {
+    padding: 0 8px;
+  }
+  body main .about-me .main {
+    flex-direction: column;
+    padding: 0 8px;
+  }
+  body main .about-me .main img {
+    display: none;
+  }
+  body main .contact-me .main {
+    flex-direction: column;
+    gap: 20px;
+  }
+  body main .contact-me .main .contacts .contact a {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
