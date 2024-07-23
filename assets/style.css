@@ -21,7 +21,7 @@ a[href] {
 
 .text-primary {
   color: #C778DD;
-  animation: light-to-primary 2s ease-in;
+  animation: light-to-primary infinite 1s alternate-reverse ease-in;
 }
 
 .text-light {
