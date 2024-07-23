@@ -201,7 +201,7 @@ body main .introduction .motivating-phrase .source .double-quote {
   right: 16px;
 }
 body main .works, body main .about-me, body main .contact-me {
-  height: 100%;
+  height: fit-content;
 }
 body main .works header h2, body main .about-me header h2, body main .contact-me header h2 {
   display: flex;
