@@ -230,6 +230,7 @@ body main .works .projects article h3 {
 body main .works .projects article img {
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 body main .works .projects article .technologies {
   padding: 12px;
