@@ -44,6 +44,12 @@ a[href] {
     border: 2px solid $color-primary;
     color: $color-light;
     background-color: $color-dark;
+    transition: all 0.6s ease-in-out;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-dark;
+    }
   }
 }
 

@@ -37,6 +37,11 @@ a[href] {
   border: 2px solid #C778DD;
   color: #FFFFFF;
   background-color: #282C33;
+  transition: all 0.6s ease-in-out;
+}
+.btn.outlined-primary:hover {
+  background-color: #C778DD;
+  color: #282C33;
 }
 
 .line-primary {
