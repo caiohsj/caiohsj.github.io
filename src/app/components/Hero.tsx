@@ -122,9 +122,9 @@ export function Hero() {
             className="lg:col-span-5"
           >
             <div className="relative aspect-square rounded-2xl overflow-hidden border border-border shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-tr from-chart-1/20 to-chart-4/20" />
+              <div className="absolute inset-0" />
               <img
-                src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdCUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3ODA2MzAyNjh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/images/me.png"
                 alt="Developer workspace"
                 className="w-full h-full object-cover"
               />
