@@ -33,7 +33,7 @@ export function About() {
             className="space-y-8"
           >
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl">Sobre Mim</h2>
+              <h2 className="text-4xl md:text-5xl">Sobre</h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Desenvolvedor Full Stack com experiência em Rails, Laravel, React, Vue.js e Node.js, atuando desde o freelancer até projetos de grande porte.
               </p>
